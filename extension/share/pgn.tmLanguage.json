@@ -1,6 +1,6 @@
 {
   "name": "Portable Game Notation (PGN)",
-  "scopeName": "source.pgn",
+  "scopeName": "text.pgn",
   "uuid": "acd88cbe-1e51-41eb-b925-251ac11317b7",
   "patterns": [
     {
@@ -9,7 +9,221 @@
   ],
   "repository": {
     "root": {
-      "patterns": []
+      "patterns": [
+        {
+          "include": "#tag-pairs"
+        },
+        {
+          "include": "#result"
+        },
+        {
+          "include": "#movetext"
+        },
+        {
+          "include": "#nag"
+        },
+        {
+          "include": "#comment"
+        },
+        {
+          "include": "#rav"
+        }
+      ]
+    },
+    "comment": {
+      "begin": "\\{",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.comment.pgn"
+        }
+      },
+      "end": "\\}",
+      "name": "comment.block.documentation.pgn"
+    },
+    "disambiguation-piece": {
+      "patterns": [
+        {
+          "match": "[a-h-][1-8-]$",
+          "name": "constant.language.square.disambiguation.piece"
+        },
+        {
+          "match": "[a-h-]$",
+          "name": "constant.language.rank.disambiguation.piece"
+        },
+        {
+          "match": "[1-8-]$",
+          "name": "constant.language.file.disambiguation.piece"
+        }
+      ]
+    },
+    "castle-half-move": {
+      "match": "O-O(-O)?$",
+      "name": "constant.language.castle"
+    },
+    "half-move": {
+      "match": "(\\.\\.\\.)?([OBKNQRa-hx1-8-=]+)([+#])?([!?]{,2})(?![^{()\\s$])",
+      "captures": {
+        "1": {
+          "name": "punctuation.separator.continuation.ellipsis"
+        },
+        "2": {
+          "name": "meta.section.half-move.body",
+          "patterns": [
+            {
+              "include": "#castle-half-move"
+            },
+            {
+              "include": "#pawn-half-move"
+            },
+            {
+              "include": "#piece-half-move"
+            },
+            {
+              "match": ".",
+              "name": "invalid.illegal.half-move.body"
+            }
+          ]
+        },
+        "3": {
+          "name": "constant.language.half-move.check"
+        },
+        "4": {
+          "name": "emphasis.half-move.nag-alts"
+        }
+      }
+    },
+    "invalid-pgn": {
+      "match": "\\S",
+      "name": "invalid.illegal.pgn"
+    },
+    "movetext": {
+      "patterns": [
+        {
+          "match": "(?<![^{()\\s$])(\\d+\\.*)?\\s*([^{()\\s$]+)",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.list.begin.movetext"
+            },
+            "2": {
+              "name": "meta.section.half-move",
+              "patterns": [
+                {
+                  "include": "#half-move"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "nag": {
+      "match": "(\\$)(\\d{1,3})",
+      "captures": {
+        "1": {
+          "name": "entity.other.attribute.operator.nag"
+        },
+        "2": {
+          "name": "entity.other.attribute.number.nag"
+        }
+      },
+      "contentName": "meta.section.nag"
+    },
+    "pawn-half-move": {
+      "match": "(?:([a-h-])(x))?([a-h][1-8])(=?[BNQR])?$",
+      "captures": {
+        "1": {
+          "name": "meta.section.square.disambiguation.pawn constant.language.rank.disambiguation.pawn"
+        },
+        "2": {
+          "name": "keyword.other.operator.capture"
+        },
+        "3": {
+          "name": "constant.language.square.half-move.pawn"
+        },
+        "4": {
+          "name": "keyword.other.operator.promote"
+        }
+      }
+    },
+    "piece-half-move": {
+      "match": "([BKNQR])([a-h-][1-8-]|[a-h-]|[1-8-])?(x)?([a-h-][1-8-])$",
+      "captures": {
+        "1": {
+          "name": "constant.character.piece"
+        },
+        "2": {
+          "name": "meta.section.square.disambiguation.piece",
+          "patterns": [
+            {
+              "include": "#disambiguation-piece"
+            }
+          ]
+        },
+        "3": {
+          "name": "keyword.other.operator.capture"
+        },
+        "4": {
+          "name": "constant.language.square.half-move.piece"
+        }
+      }
+    },
+    "rav": {
+      "begin": "\\(",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.tag.rav"
+        }
+      },
+      "end": "\\)",
+      "name": "comment.block.rav markup.italic",
+      "patterns": [
+        {
+          "include": "#root"
+        }
+      ]
+    },
+    "result": {
+      "match": "1-0|0-1|\\*|1/2-1/2",
+      "name": "constant.language.result strong.result"
+    },
+    "symbol": {
+      "patterns": [
+        {
+          "match": "[A-Za-z0-9_-]+$",
+          "name": "entity.name.tag.symbol"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.symbol"
+        }
+      ]
+    },
+    "tag-pairs": {
+      "patterns": [
+        {
+          "match": "(?<!\\S)(\\[)(\\w+)\\s+(\"[^\"]*\")(\\])(?!\\S)",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.tag.bracket.left"
+            },
+            "2": {
+              "name": "meta.section.tag.symbol",
+              "patterns": [
+                {
+                  "include": "#symbol"
+                }
+              ]
+            },
+            "3": {
+              "name": "string.quoted.double"
+            },
+            "4": {
+              "name": "punctuation.definition.tag.bracket.right"
+            }
+          },
+          "contentName": "meta.section.tag-pair.pgn"
+        }
+      ]
     }
   }
 }

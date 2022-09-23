@@ -44,7 +44,7 @@
       },
       {
         "language": "pgn",
-        "scopeName": "source.pgn",
+        "scopeName": "text.pgn",
         "path": "share/pgn.tmLanguage.json"
       }
     ],

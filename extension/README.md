@@ -8,16 +8,12 @@ formats such as FEN and PGN files.
 Pagan supports the following features:
 
 - Syntax highlighting for
-  [Forsyth-Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
-  (FEN) files
-
-## Work in progress
-
-The following features are work in progress:
-
-- Syntax highlighting for
   [Portable Game Notation](https://en.wikipedia.org/wiki/Portable_Game_Notation)
   (PGN) files
+
+- Syntax highlighting for
+  [Forsyth-Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+  (FEN) files
 
 ## FAQ
 
