@@ -20,6 +20,9 @@
           "include": "#movetext"
         },
         {
+          "include": "#whitespace"
+        },
+        {
           "include": "#nag"
         },
         {
@@ -224,6 +227,10 @@
           "contentName": "meta.section.tag-pair.pgn"
         }
       ]
+    },
+    "whitespace": {
+      "match": "\\s|$",
+      "name": "meta.section.whitespace"
     }
   }
 }
