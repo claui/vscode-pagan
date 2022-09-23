@@ -1,0 +1,15 @@
+{
+  "name": "Portable Game Notation (PGN)",
+  "scopeName": "source.pgn",
+  "uuid": "acd88cbe-1e51-41eb-b925-251ac11317b7",
+  "patterns": [
+    {
+      "include": "#root"
+    }
+  ],
+  "repository": {
+    "root": {
+      "patterns": []
+    }
+  }
+}

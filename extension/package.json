@@ -1,0 +1,85 @@
+{
+  "name": "pagan",
+  "version": "0.1.0-snapshot",
+  "publisher": "claui",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "license": "SEE LICENSE IN README.md",
+  "displayName": "Pagan – Chess game viewer",
+  "description": "Support for the Portable Game Notation (PGN) format",
+  "categories": [
+    "Programming Languages",
+    "Visualization"
+  ],
+  "keywords": [
+    "analysis",
+    "board",
+    "chess",
+    "edwards",
+    "fen",
+    "forsyth",
+    "game",
+    "notation",
+    "pgn",
+    "portable",
+    "syntax"
+  ],
+  "preview": true,
+  "main": "out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pagan.action.showLog",
+        "title": "Pagan – Chess game viewer: Show extension log"
+      }
+    ],
+    "configuration": {},
+    "configurationDefaults": {},
+    "grammars": [
+      {
+        "language": "fen",
+        "scopeName": "source.fen",
+        "path": "share/fen.tmLanguage.json"
+      },
+      {
+        "language": "pgn",
+        "scopeName": "source.pgn",
+        "path": "share/pgn.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "fen",
+        "aliases": [
+          "Forsyth-Edwards notation",
+          "FEN"
+        ],
+        "filenamePatterns": [
+          "*.fen"
+        ],
+        "firstLine": "^(([BKNPQRbknpqr1-7]+|8)/){7}\\w+\\s[bw]\\s[KQkq-]\\s([a-h][2-7]|-)\\s\\d+\\s\\d+",
+        "configuration": "share/language-configuration.json"
+      },
+      {
+        "id": "pgn",
+        "aliases": [
+          "Portable Game Notation",
+          "PGN"
+        ],
+        "filenamePatterns": [
+          "*.pgn"
+        ],
+        "configuration": "share/language-configuration.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:fen",
+    "onLanguage:pgn"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "repository": "github:claui/vscode-pagan"
+}

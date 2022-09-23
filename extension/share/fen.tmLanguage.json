@@ -1,0 +1,199 @@
+{
+  "name": "Forsyth-Edwards notation (FEN)",
+  "scopeName": "source.fen",
+  "uuid": "7267c47c-c5f2-4cb7-bb1a-58243afdfb5b",
+  "patterns": [
+    {
+      "include": "#root"
+    }
+  ],
+  "repository": {
+    "root": {
+      "patterns": [
+        {
+          "match": "((?:\\w*/)+\\w*)\\s(.*)",
+          "captures": {
+            "1": {
+              "name": "meta.section.piece-placement.fen",
+              "patterns": [
+                {
+                  "include": "#piece-placement"
+                }
+              ]
+            },
+            "2": {
+              "name": "meta.section.trailing-data-fields.fen",
+              "patterns": [
+                {
+                  "include": "#trailing-data-fields"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.fen"
+        }
+      ]
+    },
+    "castling": {
+      "patterns": [
+        {
+          "match": "-$",
+          "name": "constant.language.no-value"
+        },
+        {
+          "match": "K?Q?k?q?$",
+          "name": "constant.character.piece.castling-availability"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.castling-availability"
+        }
+      ]
+    },
+    "color": {
+      "patterns": [
+        {
+          "match": "b$",
+          "name": "constant.character.color.black"
+        },
+        {
+          "match": "w$",
+          "name": "constant.character.color.white"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.active-color"
+        }
+      ]
+    },
+    "en-passant": {
+      "patterns": [
+        {
+          "match": "-$",
+          "name": "constant.language.no-value"
+        },
+        {
+          "match": "[a-h][2-7]$",
+          "name": "constant.language.en-passant-target-square"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.en-passant-target-square"
+        }
+      ]
+    },
+    "fullmove-number": {
+      "patterns": [
+        {
+          "match": "\\d+$",
+          "name": "constant.numeric.fullmove-number"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.fullmove-number"
+        }
+      ]
+    },
+    "halfmove-clock": {
+      "patterns": [
+        {
+          "match": "\\d+$",
+          "name": "constant.numeric.halfmove-clock"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.halfmove-clock"
+        }
+      ]
+    },
+    "piece-placement": {
+      "patterns": [
+        {
+          "match": "[^/]+",
+          "captures": {
+            "0": {
+              "name": "meta.section.rank",
+              "patterns": [
+                {
+                  "include": "#rank"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": "/(?!/)",
+          "name": "punctuation.separator.rank"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.piece-placement"
+        }
+      ]
+    },
+    "rank": {
+      "patterns": [
+        {
+          "match": "\\d",
+          "name": "constant.numeric.empty-squares"
+        },
+        {
+          "match": "[BKNPQRbknpqr]",
+          "name": "constant.character.piece"
+        },
+        {
+          "match": ".+",
+          "name": "invalid.illegal.rank"
+        }
+      ]
+    },
+    "trailing-data-fields": {
+      "match": "(\\S*)(?:\\s(\\S*))?(?:\\s(\\S*))?(?:\\s(\\S*))?(?:\\s(\\S*))?",
+      "captures": {
+        "1": {
+          "name": "meta.section.data-field.active-color",
+          "patterns": [
+            {
+              "include": "#color"
+            }
+          ]
+        },
+        "2": {
+          "name": "meta.section.data-field.castling-availability",
+          "patterns": [
+            {
+              "include": "#castling"
+            }
+          ]
+        },
+        "3": {
+          "name": "meta.section.data-field.en-passant-target-square",
+          "patterns": [
+            {
+              "include": "#en-passant"
+            }
+          ]
+        },
+        "4": {
+          "name": "meta.section.data-field.halfmove-clock",
+          "patterns": [
+            {
+              "include": "#halfmove-clock"
+            }
+          ]
+        },
+        "5": {
+          "name": "meta.section.data-field.fullmove-number",
+          "patterns": [
+            {
+              "include": "#fullmove-number"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
