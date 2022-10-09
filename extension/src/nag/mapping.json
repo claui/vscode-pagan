@@ -12,7 +12,7 @@
   },
   "3": {
     "text": "very good move",
-    "glyph": "‼",
+    "glyph": "‼\ufe0e",
     "glyphFallback": "!!"
   },
   "4": {
@@ -22,7 +22,7 @@
   },
   "5": {
     "text": "speculative move",
-    "glyph": "⁉",
+    "glyph": "⁉\ufe0e",
     "glyphFallback": "!?"
   },
   "6": {
