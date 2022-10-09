@@ -8,9 +8,8 @@ import {
 } from "vscode";
 
 import Logger from "./logger";
-
 import { getCurrentTimestamp } from "./time";
-import { getNagHintsProvider } from "./nag";
+import { getNagHintsProvider, getNagHoverProvider } from "./nag";
 
 const outputChannel = window.createOutputChannel("Pagan");
 const languageSelector: DocumentSelector = { language: "pgn" };
@@ -48,6 +47,7 @@ export function activate(context: ExtensionContext) {
     languageSelector,
     getNagHintsProvider(log)
   );
+  languages.registerHoverProvider(languageSelector, getNagHoverProvider(log));
 
   return {};
 }
