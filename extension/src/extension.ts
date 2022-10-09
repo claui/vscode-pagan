@@ -8,10 +8,10 @@ import {
 } from "vscode";
 
 import Logger from "./logger";
-
 import { getCurrentTimestamp } from "./time";
+import { getNagHintsProvider, getNagHoverProvider } from "./nag";
 
-const outputChannel = window.createOutputChannel("Pagan – Chess game viewer");
+const outputChannel = window.createOutputChannel("Pagan");
 const languageSelector: DocumentSelector = { language: "pgn" };
 
 const log: Logger = {
@@ -25,7 +25,7 @@ const log: Logger = {
     this.log("INFO", ...args);
   },
   log: function (level: string, ...args: any[]) {
-    const timestamp = getCurrentTimestamp();
+    const timestamp: string = getCurrentTimestamp();
     outputChannel.appendLine(`${timestamp} [${level}] ${args.join(" ")}`);
   },
 };
@@ -43,6 +43,11 @@ export function activate(context: ExtensionContext) {
     command: "pagan.action.showLog",
     title: "Show extension log",
   };
+  languages.registerInlayHintsProvider(
+    languageSelector,
+    getNagHintsProvider(log)
+  );
+  languages.registerHoverProvider(languageSelector, getNagHoverProvider(log));
 
   return {};
 }

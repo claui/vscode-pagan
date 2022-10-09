@@ -7,13 +7,23 @@ formats such as FEN and PGN files.
 
 Pagan supports the following features:
 
-- Syntax highlighting for
+### Syntax highlighting
+
+- Provides syntax highlighting for
   [Portable Game Notation](https://en.wikipedia.org/wiki/Portable_Game_Notation)
   (PGN) files
 
-- Syntax highlighting for
+- Provides syntax highlighting for
   [Forsyth-Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
   (FEN) files
+
+### NAGs
+
+- Explains
+  [Numeric Annotation Glyphs](https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs)
+  (NAGs) on mouseover
+
+- Displays common glyphs next to NAGs, e.g. `!`, `⁈`, `±`
 
 ## FAQ
 

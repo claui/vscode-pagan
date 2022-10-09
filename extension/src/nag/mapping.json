@@ -1,0 +1,452 @@
+{
+  "0": {
+    "text": "null annotation"
+  },
+  "1": {
+    "text": "good move",
+    "glyph": "!"
+  },
+  "2": {
+    "text": "poor move",
+    "glyph": "?"
+  },
+  "3": {
+    "text": "very good move",
+    "glyph": "‼\ufe0e",
+    "glyphFallback": "!!"
+  },
+  "4": {
+    "text": "very poor move",
+    "glyph": "⁇",
+    "glyphFallback": "??"
+  },
+  "5": {
+    "text": "speculative move",
+    "glyph": "⁉\ufe0e",
+    "glyphFallback": "!?"
+  },
+  "6": {
+    "text": "questionable move",
+    "glyph": "⁈",
+    "glyphFallback": "?!"
+  },
+  "7": {
+    "text": "forced move (all others lose quickly)",
+    "glyph": "□"
+  },
+  "8": {
+    "text": "singular move (no reasonable alternatives)"
+  },
+  "9": {
+    "text": "worst move"
+  },
+  "10": {
+    "text": "drawish position",
+    "glyph": "="
+  },
+  "11": {
+    "text": "equal chances, quiet position"
+  },
+  "12": {
+    "text": "equal chances, active position"
+  },
+  "13": {
+    "text": "unclear position",
+    "glyph": "∞"
+  },
+  "14": {
+    "text": "White has a slight advantage",
+    "glyph": "⩲",
+    "glyphFallback": "+/="
+  },
+  "15": {
+    "text": "Black has a slight advantage",
+    "glyph": "⩱",
+    "glyphFallback": "=/+"
+  },
+  "16": {
+    "text": "White has a moderate advantage",
+    "glyph": "±",
+    "glyphFallback": "+/-"
+  },
+  "17": {
+    "text": "Black has a moderate advantage",
+    "glyph": "∓",
+    "glyphFallback": "-/+"
+  },
+  "18": {
+    "text": "White has a decisive advantage",
+    "glyph": "+ −",
+    "glyphFallback": "+ -"
+  },
+  "19": {
+    "text": "Black has a decisive advantage",
+    "glyph": "− +",
+    "glyphFallback": "- +"
+  },
+  "20": {
+    "text": "White has a crushing advantage (Black should resign)"
+  },
+  "21": {
+    "text": "Black has a crushing advantage (White should resign)"
+  },
+  "22": {
+    "text": "White is in zugzwang",
+    "glyph": "⨀"
+  },
+  "23": {
+    "text": "Black is in zugzwang",
+    "glyph": "⨀"
+  },
+  "24": {
+    "text": "White has a slight space advantage"
+  },
+  "25": {
+    "text": "Black has a slight space advantage"
+  },
+  "26": {
+    "text": "White has a moderate space advantage",
+    "glyph": "○"
+  },
+  "27": {
+    "text": "Black has a moderate space advantage",
+    "glyph": "○"
+  },
+  "28": {
+    "text": "White has a decisive space advantage"
+  },
+  "29": {
+    "text": "Black has a decisive space advantage"
+  },
+  "30": {
+    "text": "White has a slight time (development) advantage"
+  },
+  "31": {
+    "text": "Black has a slight time (development) advantage"
+  },
+  "32": {
+    "text": "White has a moderate time (development) advantage",
+    "glyph": "⟳"
+  },
+  "33": {
+    "text": "Black has a moderate time (development) advantage",
+    "glyph": "⟳"
+  },
+  "34": {
+    "text": "White has a decisive time (development) advantage"
+  },
+  "35": {
+    "text": "Black has a decisive time (development) advantage"
+  },
+  "36": {
+    "text": "White has the initiative",
+    "glyph": "↑"
+  },
+  "37": {
+    "text": "Black has the initiative",
+    "glyph": "↑"
+  },
+  "38": {
+    "text": "White has a lasting initiative"
+  },
+  "39": {
+    "text": "Black has a lasting initiative"
+  },
+  "40": {
+    "text": "White has the attack",
+    "glyph": "→"
+  },
+  "41": {
+    "text": "Black has the attack"
+  },
+  "42": {
+    "text": "White has insufficient compensation for material deficit"
+  },
+  "43": {
+    "text": "Black has insufficient compensation for material deficit"
+  },
+  "44": {
+    "text": "White has sufficient compensation for material deficit",
+    "glyph": "⯹",
+    "glyphFallback": "=/∞"
+  },
+  "45": {
+    "text": "Black has sufficient compensation for material deficit",
+    "glyph": "⯹",
+    "glyphFallback": "∞/="
+  },
+  "46": {
+    "text": "White has more than adequate compensation for material deficit"
+  },
+  "47": {
+    "text": "Black has more than adequate compensation for material deficit"
+  },
+  "48": {
+    "text": "White has a slight center control advantage"
+  },
+  "49": {
+    "text": "Black has a slight center control advantage"
+  },
+  "50": {
+    "text": "White has a moderate center control advantage"
+  },
+  "51": {
+    "text": "Black has a moderate center control advantage"
+  },
+  "52": {
+    "text": "White has a decisive center control advantage"
+  },
+  "53": {
+    "text": "Black has a decisive center control advantage"
+  },
+  "54": {
+    "text": "White has a slight kingside control advantage"
+  },
+  "55": {
+    "text": "Black has a slight kingside control advantage"
+  },
+  "56": {
+    "text": "White has a moderate kingside control advantage"
+  },
+  "57": {
+    "text": "Black has a moderate kingside control advantage"
+  },
+  "58": {
+    "text": "White has a decisive kingside control advantage"
+  },
+  "59": {
+    "text": "Black has a decisive kingside control advantage"
+  },
+  "60": {
+    "text": "White has a slight queenside control advantage"
+  },
+  "61": {
+    "text": "Black has a slight queenside control advantage"
+  },
+  "62": {
+    "text": "White has a moderate queenside control advantage"
+  },
+  "63": {
+    "text": "Black has a moderate queenside control advantage"
+  },
+  "64": {
+    "text": "White has a decisive queenside control advantage"
+  },
+  "65": {
+    "text": "Black has a decisive queenside control advantage"
+  },
+  "66": {
+    "text": "White has a vulnerable first rank"
+  },
+  "67": {
+    "text": "Black has a vulnerable first rank"
+  },
+  "68": {
+    "text": "White has a well protected first rank"
+  },
+  "69": {
+    "text": "Black has a well protected first rank"
+  },
+  "70": {
+    "text": "White has a poorly protected king"
+  },
+  "71": {
+    "text": "Black has a poorly protected king"
+  },
+  "72": {
+    "text": "White has a well protected king"
+  },
+  "73": {
+    "text": "Black has a well protected king"
+  },
+  "74": {
+    "text": "White has a poorly placed king"
+  },
+  "75": {
+    "text": "Black has a poorly placed king"
+  },
+  "76": {
+    "text": "White has a well placed king"
+  },
+  "77": {
+    "text": "Black has a well placed king"
+  },
+  "78": {
+    "text": "White has a very weak pawn structure"
+  },
+  "79": {
+    "text": "Black has a very weak pawn structure"
+  },
+  "80": {
+    "text": "White has a moderately weak pawn structure"
+  },
+  "81": {
+    "text": "Black has a moderately weak pawn structure"
+  },
+  "82": {
+    "text": "White has a moderately strong pawn structure"
+  },
+  "83": {
+    "text": "Black has a moderately strong pawn structure"
+  },
+  "84": {
+    "text": "White has poor rook placement"
+  },
+  "85": {
+    "text": "Black has poor rook placement"
+  },
+  "86": {
+    "text": "White has good rook placement"
+  },
+  "87": {
+    "text": "Black has good rook placement"
+  },
+  "88": {
+    "text": "White has good knight placement"
+  },
+  "89": {
+    "text": "Black has good knight placement"
+  },
+  "90": {
+    "text": "White has poor bishop placement"
+  },
+  "91": {
+    "text": "Black has poor bishop placement"
+  },
+  "92": {
+    "text": "White has good bishop placement"
+  },
+  "93": {
+    "text": "Black has good bishop placement"
+  },
+  "98": {
+    "text": "White has poor queen placement"
+  },
+  "99": {
+    "text": "Black has poor queen placement"
+  },
+  "100": {
+    "text": "White has good queen placement"
+  },
+  "101": {
+    "text": "Black has good queen placement"
+  },
+  "102": {
+    "text": "White has poor piece coordination"
+  },
+  "103": {
+    "text": "Black has poor piece coordination"
+  },
+  "104": {
+    "text": "White has good piece coordination"
+  },
+  "105": {
+    "text": "Black has good piece coordination"
+  },
+  "106": {
+    "text": "White has played the opening very poorly"
+  },
+  "107": {
+    "text": "Black has played the opening very poorly"
+  },
+  "108": {
+    "text": "White has played the opening poorly"
+  },
+  "109": {
+    "text": "Black has played the opening poorly"
+  },
+  "110": {
+    "text": "White has played the opening well"
+  },
+  "111": {
+    "text": "Black has played the opening well"
+  },
+  "112": {
+    "text": "White has played the opening very well"
+  },
+  "113": {
+    "text": "Black has played the opening very well"
+  },
+  "114": {
+    "text": "White has played the middlegame very poorly"
+  },
+  "115": {
+    "text": "Black has played the middlegame very poorly"
+  },
+  "116": {
+    "text": "White has played the middlegame poorly"
+  },
+  "117": {
+    "text": "Black has played the middlegame poorly"
+  },
+  "118": {
+    "text": "White has played the middlegame well"
+  },
+  "119": {
+    "text": "Black has played the middlegame well"
+  },
+  "120": {
+    "text": "White has played the middlegame very well"
+  },
+  "121": {
+    "text": "Black has played the middlegame very well"
+  },
+  "122": {
+    "text": "White has played the ending very poorly"
+  },
+  "123": {
+    "text": "Black has played the ending very poorly"
+  },
+  "124": {
+    "text": "White has played the ending poorly"
+  },
+  "125": {
+    "text": "Black has played the ending poorly"
+  },
+  "126": {
+    "text": "White has played the ending well"
+  },
+  "127": {
+    "text": "Black has played the ending well"
+  },
+  "128": {
+    "text": "White has played the ending very well"
+  },
+  "129": {
+    "text": "Black has played the ending very well"
+  },
+  "130": {
+    "text": "White has slight counterplay"
+  },
+  "131": {
+    "text": "Black has slight counterplay"
+  },
+  "132": {
+    "text": "White has moderate counterplay",
+    "glyph": "⇆"
+  },
+  "133": {
+    "text": "Black has moderate counterplay",
+    "glyph": "⇆"
+  },
+  "134": {
+    "text": "White has decisive counterplay"
+  },
+  "135": {
+    "text": "Black has decisive counterplay"
+  },
+  "136": {
+    "text": "White has moderate time control pressure"
+  },
+  "137": {
+    "text": "Black has moderate time control pressure"
+  },
+  "138": {
+    "text": "White has severe time control pressure",
+    "glyph": "⨁"
+  },
+  "139": {
+    "text": "Black has severe time control pressure",
+    "glyph": "⨁"
+  }
+}
