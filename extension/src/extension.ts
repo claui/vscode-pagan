@@ -10,6 +10,7 @@ import {
 import Logger from "./logger";
 
 import { getCurrentTimestamp } from "./time";
+import { getNagHintsProvider } from "./nag";
 
 const outputChannel = window.createOutputChannel("Pagan – Chess game viewer");
 const languageSelector: DocumentSelector = { language: "pgn" };
@@ -43,6 +44,10 @@ export function activate(context: ExtensionContext) {
     command: "pagan.action.showLog",
     title: "Show extension log",
   };
+  languages.registerInlayHintsProvider(
+    languageSelector,
+    getNagHintsProvider(log)
+  );
 
   return {};
 }
