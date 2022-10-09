@@ -1,604 +1,452 @@
-[
-  {
-    "id": 0,
+{
+  "0": {
     "text": "null annotation"
   },
-  {
-    "id": 1,
+  "1": {
     "text": "good move",
     "glyph": "!"
   },
-  {
-    "id": 2,
+  "2": {
     "text": "poor move",
     "glyph": "?"
   },
-  {
-    "id": 3,
+  "3": {
     "text": "very good move",
     "glyph": "‼",
     "glyphFallback": "!!"
   },
-  {
-    "id": 4,
+  "4": {
     "text": "very poor move",
     "glyph": "⁇",
     "glyphFallback": "??"
   },
-  {
-    "id": 5,
+  "5": {
     "text": "speculative move",
     "glyph": "⁉",
     "glyphFallback": "!?"
   },
-  {
-    "id": 6,
+  "6": {
     "text": "questionable move",
     "glyph": "⁈",
     "glyphFallback": "?!"
   },
-  {
-    "id": 7,
+  "7": {
     "text": "forced move (all others lose quickly)",
     "glyph": "□"
   },
-  {
-    "id": 8,
+  "8": {
     "text": "singular move (no reasonable alternatives)"
   },
-  {
-    "id": 9,
+  "9": {
     "text": "worst move"
   },
-  {
-    "id": 10,
+  "10": {
     "text": "drawish position",
     "glyph": "="
   },
-  {
-    "id": 11,
+  "11": {
     "text": "equal chances, quiet position"
   },
-  {
-    "id": 12,
+  "12": {
     "text": "equal chances, active position"
   },
-  {
-    "id": 13,
+  "13": {
     "text": "unclear position",
     "glyph": "∞"
   },
-  {
-    "id": 14,
+  "14": {
     "text": "White has a slight advantage",
     "glyph": "⩲",
     "glyphFallback": "+/="
   },
-  {
-    "id": 15,
+  "15": {
     "text": "Black has a slight advantage",
     "glyph": "⩱",
     "glyphFallback": "=/+"
   },
-  {
-    "id": 16,
+  "16": {
     "text": "White has a moderate advantage",
     "glyph": "±",
     "glyphFallback": "+/-"
   },
-  {
-    "id": 17,
+  "17": {
     "text": "Black has a moderate advantage",
     "glyph": "∓",
     "glyphFallback": "-/+"
   },
-  {
-    "id": 18,
+  "18": {
     "text": "White has a decisive advantage",
     "glyph": "+ −",
     "glyphFallback": "+ -"
   },
-  {
-    "id": 19,
+  "19": {
     "text": "Black has a decisive advantage",
     "glyph": "− +",
     "glyphFallback": "- +"
   },
-  {
-    "id": 20,
+  "20": {
     "text": "White has a crushing advantage (Black should resign)"
   },
-  {
-    "id": 21,
+  "21": {
     "text": "Black has a crushing advantage (White should resign)"
   },
-  {
-    "id": 22,
+  "22": {
     "text": "White is in zugzwang",
     "glyph": "⨀"
   },
-  {
-    "id": 23,
+  "23": {
     "text": "Black is in zugzwang",
     "glyph": "⨀"
   },
-  {
-    "id": 24,
+  "24": {
     "text": "White has a slight space advantage"
   },
-  {
-    "id": 25,
+  "25": {
     "text": "Black has a slight space advantage"
   },
-  {
-    "id": 26,
+  "26": {
     "text": "White has a moderate space advantage",
     "glyph": "○"
   },
-  {
-    "id": 27,
+  "27": {
     "text": "Black has a moderate space advantage",
     "glyph": "○"
   },
-  {
-    "id": 28,
+  "28": {
     "text": "White has a decisive space advantage"
   },
-  {
-    "id": 29,
+  "29": {
     "text": "Black has a decisive space advantage"
   },
-  {
-    "id": 30,
+  "30": {
     "text": "White has a slight time (development) advantage"
   },
-  {
-    "id": 31,
+  "31": {
     "text": "Black has a slight time (development) advantage"
   },
-  {
-    "id": 32,
+  "32": {
     "text": "White has a moderate time (development) advantage",
     "glyph": "⟳"
   },
-  {
-    "id": 33,
+  "33": {
     "text": "Black has a moderate time (development) advantage",
     "glyph": "⟳"
   },
-  {
-    "id": 34,
+  "34": {
     "text": "White has a decisive time (development) advantage"
   },
-  {
-    "id": 35,
+  "35": {
     "text": "Black has a decisive time (development) advantage"
   },
-  {
-    "id": 36,
+  "36": {
     "text": "White has the initiative",
     "glyph": "↑"
   },
-  {
-    "id": 37,
+  "37": {
     "text": "Black has the initiative",
     "glyph": "↑"
   },
-  {
-    "id": 38,
+  "38": {
     "text": "White has a lasting initiative"
   },
-  {
-    "id": 39,
+  "39": {
     "text": "Black has a lasting initiative"
   },
-  {
-    "id": 40,
+  "40": {
     "text": "White has the attack",
     "glyph": "→"
   },
-  {
-    "id": 41,
+  "41": {
     "text": "Black has the attack"
   },
-  {
-    "id": 42,
+  "42": {
     "text": "White has insufficient compensation for material deficit"
   },
-  {
-    "id": 43,
+  "43": {
     "text": "Black has insufficient compensation for material deficit"
   },
-  {
-    "id": 44,
+  "44": {
     "text": "White has sufficient compensation for material deficit",
     "glyph": "⯹",
     "glyphFallback": "=/∞"
   },
-  {
-    "id": 45,
+  "45": {
     "text": "Black has sufficient compensation for material deficit",
     "glyph": "⯹",
     "glyphFallback": "∞/="
   },
-  {
-    "id": 46,
+  "46": {
     "text": "White has more than adequate compensation for material deficit"
   },
-  {
-    "id": 47,
+  "47": {
     "text": "Black has more than adequate compensation for material deficit"
   },
-  {
-    "id": 48,
+  "48": {
     "text": "White has a slight center control advantage"
   },
-  {
-    "id": 49,
+  "49": {
     "text": "Black has a slight center control advantage"
   },
-  {
-    "id": 50,
+  "50": {
     "text": "White has a moderate center control advantage"
   },
-  {
-    "id": 51,
+  "51": {
     "text": "Black has a moderate center control advantage"
   },
-  {
-    "id": 52,
+  "52": {
     "text": "White has a decisive center control advantage"
   },
-  {
-    "id": 53,
+  "53": {
     "text": "Black has a decisive center control advantage"
   },
-  {
-    "id": 54,
+  "54": {
     "text": "White has a slight kingside control advantage"
   },
-  {
-    "id": 55,
+  "55": {
     "text": "Black has a slight kingside control advantage"
   },
-  {
-    "id": 56,
+  "56": {
     "text": "White has a moderate kingside control advantage"
   },
-  {
-    "id": 57,
+  "57": {
     "text": "Black has a moderate kingside control advantage"
   },
-  {
-    "id": 58,
+  "58": {
     "text": "White has a decisive kingside control advantage"
   },
-  {
-    "id": 59,
+  "59": {
     "text": "Black has a decisive kingside control advantage"
   },
-  {
-    "id": 60,
+  "60": {
     "text": "White has a slight queenside control advantage"
   },
-  {
-    "id": 61,
+  "61": {
     "text": "Black has a slight queenside control advantage"
   },
-  {
-    "id": 62,
+  "62": {
     "text": "White has a moderate queenside control advantage"
   },
-  {
-    "id": 63,
+  "63": {
     "text": "Black has a moderate queenside control advantage"
   },
-  {
-    "id": 64,
+  "64": {
     "text": "White has a decisive queenside control advantage"
   },
-  {
-    "id": 65,
+  "65": {
     "text": "Black has a decisive queenside control advantage"
   },
-  {
-    "id": 66,
+  "66": {
     "text": "White has a vulnerable first rank"
   },
-  {
-    "id": 67,
+  "67": {
     "text": "Black has a vulnerable first rank"
   },
-  {
-    "id": 68,
+  "68": {
     "text": "White has a well protected first rank"
   },
-  {
-    "id": 69,
+  "69": {
     "text": "Black has a well protected first rank"
   },
-  {
-    "id": 70,
+  "70": {
     "text": "White has a poorly protected king"
   },
-  {
-    "id": 71,
+  "71": {
     "text": "Black has a poorly protected king"
   },
-  {
-    "id": 72,
+  "72": {
     "text": "White has a well protected king"
   },
-  {
-    "id": 73,
+  "73": {
     "text": "Black has a well protected king"
   },
-  {
-    "id": 74,
+  "74": {
     "text": "White has a poorly placed king"
   },
-  {
-    "id": 75,
+  "75": {
     "text": "Black has a poorly placed king"
   },
-  {
-    "id": 76,
+  "76": {
     "text": "White has a well placed king"
   },
-  {
-    "id": 77,
+  "77": {
     "text": "Black has a well placed king"
   },
-  {
-    "id": 78,
+  "78": {
     "text": "White has a very weak pawn structure"
   },
-  {
-    "id": 79,
+  "79": {
     "text": "Black has a very weak pawn structure"
   },
-  {
-    "id": 80,
+  "80": {
     "text": "White has a moderately weak pawn structure"
   },
-  {
-    "id": 81,
+  "81": {
     "text": "Black has a moderately weak pawn structure"
   },
-  {
-    "id": 82,
+  "82": {
     "text": "White has a moderately strong pawn structure"
   },
-  {
-    "id": 83,
+  "83": {
     "text": "Black has a moderately strong pawn structure"
   },
-  {
-    "id": 84,
-    "text": "White has a very strong pawn structure"
-  },
-  {
-    "id": 85,
-    "text": "Black has a very strong pawn structure"
-  },
-  {
-    "id": 86,
-    "text": "White has poor knight placement"
-  },
-  {
-    "id": 87,
-    "text": "Black has poor knight placement"
-  },
-  {
-    "id": 88,
-    "text": "White has good knight placement"
-  },
-  {
-    "id": 89,
-    "text": "Black has good knight placement"
-  },
-  {
-    "id": 90,
-    "text": "White has poor bishop placement"
-  },
-  {
-    "id": 91,
-    "text": "Black has poor bishop placement"
-  },
-  {
-    "id": 92,
-    "text": "White has good bishop placement"
-  },
-  {
-    "id": 93,
-    "text": "Black has good bishop placement"
-  },
-  {
-    "id": 84,
+  "84": {
     "text": "White has poor rook placement"
   },
-  {
-    "id": 85,
+  "85": {
     "text": "Black has poor rook placement"
   },
-  {
-    "id": 86,
+  "86": {
     "text": "White has good rook placement"
   },
-  {
-    "id": 87,
+  "87": {
     "text": "Black has good rook placement"
   },
-  {
-    "id": 98,
+  "88": {
+    "text": "White has good knight placement"
+  },
+  "89": {
+    "text": "Black has good knight placement"
+  },
+  "90": {
+    "text": "White has poor bishop placement"
+  },
+  "91": {
+    "text": "Black has poor bishop placement"
+  },
+  "92": {
+    "text": "White has good bishop placement"
+  },
+  "93": {
+    "text": "Black has good bishop placement"
+  },
+  "98": {
     "text": "White has poor queen placement"
   },
-  {
-    "id": 99,
+  "99": {
     "text": "Black has poor queen placement"
   },
-  {
-    "id": 100,
+  "100": {
     "text": "White has good queen placement"
   },
-  {
-    "id": 101,
+  "101": {
     "text": "Black has good queen placement"
   },
-  {
-    "id": 102,
+  "102": {
     "text": "White has poor piece coordination"
   },
-  {
-    "id": 103,
+  "103": {
     "text": "Black has poor piece coordination"
   },
-  {
-    "id": 104,
+  "104": {
     "text": "White has good piece coordination"
   },
-  {
-    "id": 105,
+  "105": {
     "text": "Black has good piece coordination"
   },
-  {
-    "id": 106,
+  "106": {
     "text": "White has played the opening very poorly"
   },
-  {
-    "id": 107,
+  "107": {
     "text": "Black has played the opening very poorly"
   },
-  {
-    "id": 108,
+  "108": {
     "text": "White has played the opening poorly"
   },
-  {
-    "id": 109,
+  "109": {
     "text": "Black has played the opening poorly"
   },
-  {
-    "id": 110,
+  "110": {
     "text": "White has played the opening well"
   },
-  {
-    "id": 111,
+  "111": {
     "text": "Black has played the opening well"
   },
-  {
-    "id": 112,
+  "112": {
     "text": "White has played the opening very well"
   },
-  {
-    "id": 113,
+  "113": {
     "text": "Black has played the opening very well"
   },
-  {
-    "id": 114,
+  "114": {
     "text": "White has played the middlegame very poorly"
   },
-  {
-    "id": 115,
+  "115": {
     "text": "Black has played the middlegame very poorly"
   },
-  {
-    "id": 116,
+  "116": {
     "text": "White has played the middlegame poorly"
   },
-  {
-    "id": 117,
+  "117": {
     "text": "Black has played the middlegame poorly"
   },
-  {
-    "id": 118,
+  "118": {
     "text": "White has played the middlegame well"
   },
-  {
-    "id": 119,
+  "119": {
     "text": "Black has played the middlegame well"
   },
-  {
-    "id": 120,
+  "120": {
     "text": "White has played the middlegame very well"
   },
-  {
-    "id": 121,
+  "121": {
     "text": "Black has played the middlegame very well"
   },
-  {
-    "id": 122,
+  "122": {
     "text": "White has played the ending very poorly"
   },
-  {
-    "id": 123,
+  "123": {
     "text": "Black has played the ending very poorly"
   },
-  {
-    "id": 124,
+  "124": {
     "text": "White has played the ending poorly"
   },
-  {
-    "id": 125,
+  "125": {
     "text": "Black has played the ending poorly"
   },
-  {
-    "id": 126,
+  "126": {
     "text": "White has played the ending well"
   },
-  {
-    "id": 127,
+  "127": {
     "text": "Black has played the ending well"
   },
-  {
-    "id": 128,
+  "128": {
     "text": "White has played the ending very well"
   },
-  {
-    "id": 129,
+  "129": {
     "text": "Black has played the ending very well"
   },
-  {
-    "id": 130,
+  "130": {
     "text": "White has slight counterplay"
   },
-  {
-    "id": 131,
+  "131": {
     "text": "Black has slight counterplay"
   },
-  {
-    "id": 132,
+  "132": {
     "text": "White has moderate counterplay",
     "glyph": "⇆"
   },
-  {
-    "id": 133,
+  "133": {
     "text": "Black has moderate counterplay",
     "glyph": "⇆"
   },
-  {
-    "id": 134,
+  "134": {
     "text": "White has decisive counterplay"
   },
-  {
-    "id": 135,
+  "135": {
     "text": "Black has decisive counterplay"
   },
-  {
-    "id": 136,
+  "136": {
     "text": "White has moderate time control pressure"
   },
-  {
-    "id": 137,
+  "137": {
     "text": "Black has moderate time control pressure"
   },
-  {
-    "id": 138,
+  "138": {
     "text": "White has severe time control pressure",
     "glyph": "⨁"
   },
-  {
-    "id": 139,
+  "139": {
     "text": "Black has severe time control pressure",
     "glyph": "⨁"
   }
-]
+}
